@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <title>Review</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__list">
+            <span class="header__list-lang">EN</span>
+
+            <a href="/" class="header__list-logo">
+                <img src="./images/large_logo_black.webp" alt="Unique Vintage">
+            </a>
+            <ul class="header__list-items">
+                <li class="items-item">
+                    <a href="#" class="item-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </a>
+                    
+                </li>
+                <li class="items-item">
+                    <a href="#" class="item-sign-in">
+                        <i class="fa-regular fa-user"></i>
+                        Sign in
+                    </a>
+                </li>
+                <li class="items-item">
+                    <a href="#" class="item-wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                </li>
+                <li class="items-item">
+                    <a href="#" class="item-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <nav class="navbar">
+            <input type="checkbox" id="menu__checkbox" class="menu__checkbox">
+            <div class="menu__toggle">
+                <label for="menu__checkbox" class="menu__list">
+                    <i class="menu__list-icon fa-solid fa-list"></i>
+                    <i class="menu__list-close fa-solid fa-xmark"></i>
+                </label>
+            </div>
+            <ul class="navbar__nav">
+                <li class="nav-item">
+                    <a href="../blog/index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../shopIndex.html" class="nav-link">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Review</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">More</a>
+                </li>
+            </ul>
+        </nav>
+        <input type="text" class="item-search-input" placeholder="Search...">
+    </header>
+    <!-- REVIEWS_COMMENT -->
+    <div class="reviews">
+        <h1>REVIEWS</h1>
+        <div class="reviews__content">
+            <div class="reviews__stars">
+                <div class="reviews__stars-average">
+                    <span class="reviews__average">4.8</span>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="reviews__info">Based on 150 reviews</span>
+            </div>
+        <div class="reviews__stars-breakdown">
+            <div class="reviews__rating-level">
+                    <div class="reviews__rating-row">
+                        <span>5</span>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="reviews__bar"><div class="reviews__bar-fill" style="width: 80%;"></div></div>
+                        <span>113</span>
+                    </div>
+                    <div class="reviews__rating-row">
+                        <span>4</span>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="reviews__bar"><div class="reviews__bar-fill" style="width: 10%;"></div></div>
+                        <span>24</span>
+                    </div>
+                    <div class="reviews__rating-row">
+                        <span>3</span>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="reviews__bar"><div class="reviews__bar-fill" style="width: 5%;"></div></div>
+                        <span>8</span>
+                    </div>
+                    <div class="reviews__rating-row">
+                        <span>2</span>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="reviews__bar"><div class="reviews__bar-fill" style="width: 3%;"></div></div>
+                        <span>3</span>
+                    </div>
+                    <div class="reviews__rating-row">
+                        <span>1</span>
+                        <i class="fa-solid fa-star"></i>
+                        <div class="reviews__bar"><div class="reviews__bar-fill" style="width: 2%;"></div></div>
+                        <span>2</span>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="reviews__recommendation">
+            <div class="reviews__recommendation-percentage">
+                <p><span>96%</span> would recommend this product</p>
+                <div class="reviews__images">
+                    <a href="#img1"><img src="./images/cloth-1.webp" ></a>
+                    <a href="#img2"><img src="./images/cloth-2.webp" ></a>
+                    <a href="#img3"><img src="./images/cloth-3.webp" ></a>
+                    <a href="#img4"><img src="./images/cloth-4.webp" ></a>
+                    <a href="#img5"><img src="./images/cloth-5.webp" ></a>
+                </div>
+                <div class="reviews__overlay" id="img1">
+                    <a href="#"><img src="./images/cloth-1.webp" ></a>
+                </div>
+                <div class="reviews__overlay" id="img2">
+                    <a href="#"><img src="./images/cloth-2.webp" ></a>
+                </div>
+                <div class="reviews__overlay" id="img3">
+                    <a href="#"><img src="./images/cloth-3.webp" ></a>
+                </div>
+                <div class="reviews__overlay" id="img4">
+                    <a href="#"><img src="./images/cloth-4.webp" ></a>
+                </div>
+                <div class="reviews__overlay" id="img5">
+                    <a href="#"><img src="./images/cloth-5.webp" ></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="reviews__actions">
+        <div class="reviews__filters">
+           <div class="reviews__filter">
+            <img src="./images/filter.png" alt="">
+            <a href="#">Filter</a>
+            <ul class="reviews__actions-dropdown-menu">
+                <li><a href="#">All stars</a></li>
+                <li><a href="#">5 stars</a></li>
+                <li><a href="#">4 stars</a></li>
+                <li><a href="#">3 stars</a></li>
+                <li><a href="#">2 stars</a></li>
+                <li><a href="#">1 star</a></li>
+            </ul>
+            </div>
+        <div class="reviews__sort">
+            <a href="#" class="reviews__sort-dropdown-toggle">Most Recent</a>
+            <i class="fa-solid fa-angle-down"></i>
+            <ul class="reviews__actions-dropdown-menu">
+                <li><a href="#">3 days ago</a></li>
+                <li><a href="#">1 month ago</a></li>
+                <li><a href="#">3 month ago</a></li>
+                <li><a href="#">6 month ago</a></li>
+            </ul>
+        </div>  
+        <div class="reviews__write">
+            <img src="./images/pen.png" alt="">
+            <a href="#">Write A Review</a>
+        </div>
+    </div>
+    </div>
+    <hr>
+    <input type="checkbox" id="reviews__toggle">
+    <div class="reviews__comment">
+        <div class="reviews__comment-people">
+            <div class="reviews__comment-person">
+                <div class="reviews__comment-person-image">
+                    <img src="./images/avatar1.jpg" alt="">
+                </div>
+                <div class="reviews__comment-person-name">
+                    <h3>Brett P.</h3>
+                    <p>Verified Buyer <img src="./images/check (1).png"></p>
+                </div>
+                <div class="reviews__comment-rate">
+                    <img src="./images/like (1).png">
+                    <p>I recommend this product</p> 
+                </div>
+            </div>
+        <div class="reviews__comment-person-comment">
+            <div class="reviews__rating-stars">
+                <div class="reviews__star-icons">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p>3 days ago</p>
+            </div>
+            <div class="reviews__rating-comment">
+                <h3>Absolutely perfect!</h3>
+                <p style="font-size: 18px;">I bought this for my girlfriend and she absolutely loved it. The design is elegant, the quality is excellent, and it looked even better in person than in the pictures. It fit her perfectly and brought the biggest smile to her face — which, honestly, made it worth every penny. It’s such a great feeling to give something that makes her feel beautiful and confident. Highly recommend for anyone looking to impress someone special!</p>
+                <div class="reviews__comment-recommend">
+                    <p >Was this helpful?</p>
+                    <i class="fa-solid fa-thumbs-up"></i>10
+                    <i class="fa-solid fa-thumbs-down"></i>2
+                </div>
+            </div>
+        </div>    
+        <div class="reviews__comment-image-product">
+            <a href="#img3"><img src="./images/cloth-3.webp" alt=""></a>
+        </div>
+        </div>
+        <hr>
+        <div class="reviews__comment-people">
+            <div class="reviews__comment-person">
+                <div class="reviews__comment-person-image">
+                    <img src="./images/avatar2.jpg" alt="">
+                </div>
+                <div class="reviews__comment-person-name">
+                    <h3>Kevin M.</h3>
+                    <p>Verified Buyer <img src="./images/check (1).png"></p>
+                </div>
+                <div class="reviews__comment-rate">
+                    <img src="./images/like (1).png">
+                    <p>I recommend this product</p> 
+                </div>
+            </div>
+            <div class="reviews__comment-person-comment">
+                <div class="reviews__rating-stars">
+                    <div class="reviews__star-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>1 month ago</p>
+                </div>
+                <div class="reviews__rating-comment">
+                    <h3>A bit disappointing.</h3>
+                    <p style="font-size: 18px;">I bought this for my girlfriend, hoping it would be a special gift, but unfortunately, it didn’t quite meet expectations. The design looked nice in the pictures, but in real life, the material felt cheap and the sizing was off. She tried to be polite about it, but I could tell she wasn’t impressed. It’s a shame, because I really wanted her to love it. Not the worst purchase, but I wouldn’t buy from here again unless things improve.</p>
+                    <div class="reviews__comment-recommend">
+                        <p >Was this helpful?</p>
+                        <i class="fa-solid fa-thumbs-up"></i>1
+                        <i class="fa-solid fa-thumbs-down"></i>1
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <hr>
+        <div class="reviews__comment-people">
+            <div class="reviews__comment-person">
+                <div class="reviews__comment-person-image">
+                    <img src="./images/avatar3.jpg" alt="">
+                </div>
+                <div class="reviews__comment-person-name">
+                    <h3>Zoe A.</h3>
+                    <p>Verified Buyer <img src="./images/check (1).png"></p>
+                </div>
+                <div class="reviews__comment-rate">
+                    <img src="./images/like (1).png">
+                    <p>I recommend this product</p> 
+                </div>
+            </div>
+            <div class="reviews__comment-person-comment">
+                <div class="reviews__rating-stars">
+                    <div class="reviews__star-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>3 month ago</p>
+                </div>
+                <div class="reviews__rating-comment">
+                    <h3>She really liked it!</h3>
+                    <p style="font-size: 18px;">I got this as a gift for my girlfriend, and she was genuinely happy with it. The style is beautiful and feminine, and the quality is quite good for the price. It fit her well and looked lovely on her. The only reason I’m giving 4 stars instead of 5 is because the packaging could’ve been a bit nicer for a gift — but overall, it was a great buy and totally worth it. Would definitely consider buying again!</p>
+                    <div class="reviews__comment-recommend">
+                        <p >Was this helpful?</p>
+                        <i class="fa-solid fa-thumbs-up"></i>5
+                        <i class="fa-solid fa-thumbs-down"></i>4
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <hr>
+        <div class="reviews__comment-people">
+            <div class="reviews__comment-person">
+                <div class="reviews__comment-person-image">
+                    <img src="./images/avatar4.jpg" alt="">
+                </div>
+                <div class="reviews__comment-person-name">
+                    <h3>Lindsay F.</h3>
+                    <p>Verified Buyer <img src="./images/check (1).png"></p>
+                </div>
+                <div class="reviews__comment-rate">
+                    <img src="./images/like (1).png">
+                    <p>I recommend this product</p> 
+                </div>
+            </div>
+            <div class="reviews__comment-person-comment">
+                <div class="reviews__rating-stars">
+                    <div class="reviews__star-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>3 month ago</p>
+                </div>
+                <div class="reviews__rating-comment">
+                    <h3>Absolutely love it!</h3>
+                    <p style="font-size: 18px;">The women’s fashion collection here is simply stunning. Every piece feels thoughtfully designed, combining elegance with just the right touch of modern flair. 
+                        The fabrics are high-quality, the fits are flattering, and the color palettes are effortlessly chic. It’s the kind of style that makes you feel confident and beautiful the moment you put it on. Truly a five-star experience for anyone who loves fashion that speaks for itself!</p>
+                    <div class="reviews__comment-recommend">
+                        <p >Was this helpful?</p>
+                        <i class="fa-solid fa-thumbs-up"></i>13
+                        <i class="fa-solid fa-thumbs-down"></i>3
+                    </div>
+                </div>
+            </div>   
+            <div class="reviews__comment-image-product">
+                <a href="#img1"><img src="./images/cloth-1.webp" alt=""></a>
+                <a href="#img5"><img src="./images/cloth-5.webp" alt=""></a>
+            </div> 
+        </div>
+        <hr>
+        <div class="reviews__comment-people-extra">
+        <div class="reviews__comment-people">
+            <div class="reviews__comment-person">
+                <div class="reviews__comment-person-image">
+                    <img src="./images/avatar5.jpg" alt="">
+                </div>
+                <div class="reviews__comment-person-name">
+                    <h3>Mary J.</h3>
+                    <p>Verified Buyer <img src="./images/check (1).png"></p>
+                </div>
+                <div class="reviews__comment-rate">
+                    <img src="./images/like (1).png">
+                    <p>I recommend this product</p> 
+                </div>
+            </div>
+            <div class="reviews__comment-person-comment">
+                <div class="reviews__rating-stars">
+                    <div class="reviews__star-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>3 month ago</p>
+                </div>
+                <div class="reviews__rating-comment">
+                    <h3> It’s alright.</h3>
+                    <p style="font-size: 18px;">The women’s fashion collection has a few nice pieces, and I appreciated some of the trendy designs. The materials were okay, and a couple of outfits fit really well. However, the overall selection felt a bit limited and not as unique as I expected. It’s not bad, but it didn’t leave a lasting impression either. A decent place to browse, but I’m not sure I’d come back unless there are new arrivals.</p>
+                    <div class="reviews__comment-recommend">
+                        <p >Was this helpful?</p>
+                        <i class="fa-solid fa-thumbs-up"></i>4
+                        <i class="fa-solid fa-thumbs-down"></i>1
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <hr>
+        <div class="reviews__comment-people">
+            <div class="reviews__comment-person">
+                <div class="reviews__comment-person-image">
+                    <img src="./images/avatar6.jpg" alt="">
+                </div>
+                <div class="reviews__comment-person-name">
+                    <h3>Lady B.</h3>
+                    <p>Verified Buyer <img src="./images/check (1).png"></p>
+                </div>
+                <div class="reviews__comment-rate">
+                    <img src="./images/like (1).png">
+                    <p>I recommend this product</p> 
+                </div>
+            </div>
+            <div class="reviews__comment-person-comment">
+                <div class="reviews__rating-stars">
+                    <div class="reviews__star-icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>6 month ago</p>
+                </div>
+                <div class="reviews__rating-comment">
+                    <h3>Really impressed!</h3>
+                    <p style="font-size: 18px;">I bought this for myself and was honestly very happy with it. The design is feminine and elegant, and it made me feel confident as soon as I tried it on. The quality is better than I expected, and it looks great both in photos and in person. The only reason I’m giving it 4 stars instead of 5 is because the shipping took a bit longer than I hoped. Still, it was totally worth the wait — I’ve already gotten compliments wearing it!</p>
+                    <div class="reviews__comment-recommend">
+                        <p >Was this helpful?</p>
+                        <i class="fa-solid fa-thumbs-up"></i>2
+                        <i class="fa-solid fa-thumbs-down"></i>0
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <hr>
+        <div class="reviews__comment-people">
+            <div class="reviews__comment-person">
+                <div class="reviews__comment-person-image">
+                    <img src="./images/avatar7.jpg" alt="">
+                </div>
+                <div class="reviews__comment-person-name">
+                    <h3>Kacy C.</h3>
+                    <p>Verified Buyer <img src="./images/check (1).png"></p>
+                </div>
+                <div class="reviews__comment-rate">
+                    <img src="./images/like (1).png">
+                    <p>I recommend this product</p> 
+                </div>
+            </div>
+            <div class="reviews__comment-person-comment">
+                <div class="reviews__rating-stars">
+                    <div class="reviews__star-icons">
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>6 month ago</p>
+                </div>
+                <div class="reviews__rating-comment">
+                    <h3>Not for me! </h3>
+                    <p style="font-size: 18px;">I was really excited to receive this, but unfortunately, it turned out to be nothing like what I expected. The quality was poor, the fabric felt uncomfortable, and the fit was completely off. It didn’t look like the photos at all, and honestly, I didn’t feel good wearing it. I ended up returning it. Really hoped for better, but this was a letdown.</p>
+                    <div class="reviews__comment-recommend">
+                        <p >Was this helpful?</p>
+                        <i class="fa-solid fa-thumbs-up"></i>1
+                        <i class="fa-solid fa-thumbs-down"></i>0
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <hr>
+        <div class="reviews__best-people">
+            <h1>Top Buyer</h1>
+            <div class="reviews__container">
+                <div class="reviews__ranking">
+                    <div class="reviews__ranking-rank-1 ">
+                        <img src="./images/emma.jpg">
+                        <div class="reviews__rank-overlay">
+                            <a href="#" class="reviews__rank-overlay-text">Emma Stone</a>
+                        </div>
+                    </div>
+                    <div class="reviews__ranking-rank-2">
+                        <img src="./images/sếp.jpg">
+                        <div class="reviews__rank-overlay">
+                            <a href="#" class="reviews__rank-overlay-text">Sơn Tùng MTP</a>
+                        </div>
+                    </div>
+                    <div class="reviews__ranking-rank-3">
+                        <img src="./images/thor.jpg">
+                        <div class="reviews__rank-overlay">
+                        <a href="#" class="reviews__rank-overlay-text">Chris Hemsworth</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+        <div class="reviews__fade-overlay"></div> 
+    </div>
+    <label for="reviews__toggle" class="see-more-label"></label>
+</div>
+<footer class="footer">
+        <div class="footer__social-list">
+            <a href="" class="social-list-item">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="" class="social-list-item">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="" class="social-list-item">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="" class="social-list-item">
+                <i class="fa-brands fa-pinterest"></i>
+            </a>
+            <a href="" class="social-list-item">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="" class="social-list-item">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+        <div class="footer__content-top">
+            <div class="footer__block-discount">
+                <h4 class="block__title">WANT 10% OFF?</h4>
+                <h4 class="block__title">WANT 10% OFF?</h4>
+            </div>
+            <div class="footer__block-account footer__block">
+                <input type="checkbox" id="block__checkbox-account" class="block__checkbox-input">
+                <label for="block__checkbox-account" class="block__checkbox-label">
+                    <h4 class="block__title">MY ACCOUNT</h4>
+                    <i class="fa-solid fa-plus block__checkbox-more-icon"></i>
+                    <i class="fa-solid fa-minus block__checkbox-less-icon"></i>
+                </label>              
+                <ul class="block__list">
+                    <li class="block__item"><a href="" class="block__item-link">My info</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Order Status</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Start My Exchange Or Return</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Manage Your Darling Rewards</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Gift Cards</a></li>
+                </ul>
+            </div>
+            <div class="footer__block-help footer__block">
+                <input type="checkbox" id="block__checkbox-help" class="block__checkbox-input">
+                <label for="block__checkbox-help" class="block__checkbox-label">
+                    <h4 class="block__title">HELP</h4>
+                    <i class="fa-solid fa-plus block__checkbox-more-icon"></i>
+                    <i class="fa-solid fa-minus block__checkbox-less-icon"></i>
+                </label>              
+                <ul class="block__list">
+                    <li class="block__item"><a href="" class="block__item-link">FAQS</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Bulk Order Policy</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Sizing & Fit Guide</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Promotions</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Student & Grads Discounts</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Teacher & Military Discounts</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">UV Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer__block-company">
+                <input type="checkbox" id="block__checkbox-company" class="block__checkbox-input">
+                <label for="block__checkbox-company" class="block__checkbox-label">
+                    <h4 class="block__title">COMPANY</h4>
+                    <i class="fa-solid fa-plus block__checkbox-more-icon"></i>
+                    <i class="fa-solid fa-minus block__checkbox-less-icon"></i>
+                </label>  
+                <ul class="block__list">
+                    <li class="block__item"><a href="" class="block__item-link">Out Story</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Wholesale</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Affiliate Program</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Press</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Corporate Responsibility</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Accessibility Policy</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">ThredUp Clean Out Kit</a></li>
+                </ul>
+            </div>
+            <div class="footer__block-contact">
+                <h4 class="block__title">CONTACT US</h4>
+                <div class="block-contact__method">
+                    <div class="contact__method contact__phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="contact__group">
+                            <span>Contact Customer Service</span>
+                            <span>(800)721-6589</span>
+                        </div>
+                    </div>
+                    <div class="contact__method contact__text">
+                        <i class="fa-solid fa-message"></i>
+                        <div class="contact__group">
+                            <span>Chat with us</span>
+                            <span>Live Chat</span>
+                        </div>
+                    </div>
+                    <div class="contact__method contact__mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="contact__group">
+                            <span>Email Us:</span>
+                            <span>Service@Uniquevintage.com</span>
+                        </div>
+                    </div>
+                    <div class="contact__method contact__meet">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="contact__group">
+                            <span>8:30 am - 5:00pm PST</span>
+                            <span>Monday - Friday</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-copyright">
+                <i class="footer__bottom-copyright-icon fa-regular fa-copyright"></i>
+                <span class="footer__bottom-copyright-info">2002 - 2023 Unique Vintage. All Rights Reserved.</span>
+            </div>
+            <div class="footer__bottom-terms">
+                <a href="" class="footer__bottom-terms-link">PRIVACY POLICY</a>
+                <a href="" class="footer__bottom-terms-link">TERMS & CONDITIONS</a>
+        </div>
+    </footer>
+</body>
+</html>
