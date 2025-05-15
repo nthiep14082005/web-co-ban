@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assests/style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="header__list">
+            <span class="header__list-lang">EN</span>
+
+            <a href="/" class="header__list-logo">
+                <img src="./assests/img/large_logo_black.webp" alt="Unique Vintage">
+            </a>
+            <ul class="header__list-items">
+                <li class="items-item">
+                    <a href="#" class="item-search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </a>
+                    
+                </li>
+                <li class="items-item">
+                    <a href="#" class="item-sign-in">
+                        <i class="fa-regular fa-user"></i>
+                        Sign in
+                    </a>
+                </li>
+                <li class="items-item">
+                    <a href="#" class="item-wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                    </a>
+                </li>
+                <li class="items-item">
+                    <a href="#" class="item-cart">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <nav class="navbar">
+            <input type="checkbox" id="menu__checkbox" class="menu__checkbox">
+            <div class="menu__toggle">
+                <label for="menu__checkbox" class="menu__list">
+                    <i class="menu__list-icon fa-solid fa-list"></i>
+                    <i class="menu__list-close fa-solid fa-xmark"></i>
+                </label>
+            </div>
+            <ul class="navbar__nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">SHOP</a>
+                </li>
+                <li class="nav-item">
+                    <a href="../Review/index.html" class="nav-link">REVIEW</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">MORE</a>
+                </li>
+            </ul>
+        </nav>
+
+        <input type="text" class="item-search-input" placeholder="Search...">
+    </header>
+    
+    <main class="main">
+        <section class="slider">
+            <img src="./assests/img/main/banner_sale.webp" alt="" class="slide active">
+            <img src="./assests/img/main/banner_spring.webp" alt="" class="slide">
+            <img src="./assests/img/main/banner_disney.webp" alt="" class="slide">
+            <button class="slider__btn slider__btn-prev" id="prev">
+                <i class="fa-solid fa-arrow-left"></i>
+            </button>
+            <button class="slider__btn slider__btn-next" id="next">
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </section>
+
+        <section class="shop-by-era grid">
+            <div class="shop-by-era__title grid__column-2">
+                <h2>Shop by Era</h2>
+            </div>
+            <div class="shop-by-era__list grid__column-10">
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/1920s.webp" alt="1920s">
+                    <figcaption class="era-label">1920s</figcaption>
+                </figure>
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/1930s.webp" alt="1930s">
+                    <figcaption class="era-label">1930s</figcaption>
+                </figure>
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/1940s.webp" alt="1940s">
+                    <figcaption class="era-label">1940s</figcaption>
+                </figure>
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/1950s.webp" alt="1950s">
+                    <figcaption class="era-label">1950s</figcaption>
+                </figure>
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/1960s.webp" alt="1960s">
+                    <figcaption class="era-label">1960s</figcaption>
+                </figure>
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/1970s.webp" alt="1970s">
+                    <figcaption class="era-label">1970s</figcaption>
+                </figure>
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/1980s.webp" alt="1980s">
+                    <figcaption class="era-label">1980s</figcaption>
+                </figure>
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/1990s.webp" alt="1990s">
+                    <figcaption class="era-label">1990s</figcaption>
+                </figure>
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/y2k.webp" alt="Y2K">
+                    <figcaption class="era-label">Y2K</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="banner2">
+            <a href="" class="banner2__link">
+                <img src="./assests/img/main/banner_disney-mobile.webp" alt="" class="banner2__img">
+            </a>
+            <a href="" class="banner2__link">
+                <img src="./assests/img/main/banner_bikini.webp" alt="" class="banner2__img">
+            </a>
+        </section>
+
+        <section class="category">
+            <a href="#" class="category__selection">
+                <figure>
+                    <img src="./assests/img/category/bestsellers.webp" alt="" class="category__selection-img">
+                    <figcaption class="category__selection-desc">BESTSELLERS</figcaption>
+                </figure>
+            </a>
+            <a href="#" class="category__selection">
+                <figure>
+                    <img src="./assests/img/category/spring-dresses.webp" alt="" class="category__selection-img">
+                    <figcaption class="category__selection-desc">SPRING DRESSES</figcaption>
+                </figure>
+            </a>
+            <a href="#" class="category__selection">
+                <figure>
+                    <img src="./assests/img/category/barbie.webp" alt="" class="category__selection-img">
+                    <figcaption class="category__selection-desc">BARBIE X UNIQUE VINTAGE</figcaption>
+                </figure>
+            </a>
+            <a href="#" class="category__selection">
+                <figure>
+                    <img src="./assests/img/category/disney-bambi.webp" alt="" class="category__selection-img">
+                    <figcaption class="category__selection-desc">DISNEY COLLECTION BY UNIQUE VINTAGE</figcaption>
+                </figure>
+            </a>
+            <a href="#" class="category__selection">
+                <figure>
+                    <img src="./assests/img/category/special-occassion.webp" alt="" class="category__selection-img">
+                    <figcaption class="category__selection-desc">PROM COLLECTION</figcaption>
+                </figure>
+            </a>
+            <a href="#" class="category__selection">
+                <figure>
+                    <img src="./assests/img/category/accessories.webp" alt="" class="category__selection-img">
+                    <figcaption class="category__selection-desc">SHOP ACCESSORIES</figcaption>
+                </figure>
+            </a>
+        </section>
+
+        <section class="banner2">
+            <a href="" class="banner2__link">
+                <img src="./assests/img/main/banner_halloween.webp" alt="" class="banner2__img">
+            </a>
+            <a href="" class="banner2__link">
+                <img src="./assests/img/main/banner_western.webp" alt="" class="banner2__img">
+            </a>
+        </section>
+
+        <section class="new_arrivals">
+            <h3 class="new_arrivals__title">New Arrivals</h3>
+            <div class="new_arrivals__container">
+                <button class="new_arrivals__btn new_arrivals__btn-prev" id="new_arrivals_prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <div class="new_arrivals__list">
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/black-shirred-swing-dress.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                Unique Vintage Black Shirred Swing Dress
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    2.210.300đ
+                            </p>
+                            <div class="new_arrivals__item-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="new_arrivals__item-rating-count">(5)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/cat-face-print-cotton-fit-flare-dress.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                Cat Face Print Cotton Fit & Flare Dress
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    990.600đ
+                            </p>
+                            <div class="new_arrivals__item-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="new_arrivals__item-rating-count">(12)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/cherries-berries-print-cotton-skirt-overalls.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                Cherries & Berries Print Cotton Skirt Overalls
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    1.230.000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/ivory-rainbow-heart-shaped-patch-sweater.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                Ivory Rainbow Heart Shaped Patch Sweater
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    1.110.500đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/multicolor-fruit-print-cotton-swing-dress.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                Multicolor Fruit Print Cotton Swing Dress
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    3.120.100đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/orchid-bloom-red-white-plaid-picnic-swing-dress.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                Orchid Bloom Red & White Plaid Picnic Swing Dress
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    2.210.300đ
+                            </p>
+                            <div class="new_arrivals__item-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="new_arrivals__item-rating-count">(2)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/pink-denim-tube-top-romper.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                Pink Denim Tube Top Romper
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    2.210.300đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/veggie-garden-embroidered-cotton-midi-dress.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                Veggie Garden Embroidered Cotton Midi Dress
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    2.220.200đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/white-collared-athletic-a-line-dress.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                White Collared Athletic A-Line Dress
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    2.250.500đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/white-satin-jacquard-bandeau-midi-dress.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                White Satin Jacquard Bandeau Midi Dress
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    1.910.300đ
+                            </p>
+                            <div class="new_arrivals__item-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="new_arrivals__item-rating-count">(27)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="new_arrivals__btn new_arrivals__btn-next" id="new_arrivals_next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
+
+        <section class="marquee__logo-section" style="background: url(./assests/img/marquee-logo/logo_bg_2000x.webp);">
+            <h2>As Featured in</h2>
+            <div class="marquee__logo-list">
+                <div class="logo-box">
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo01_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo02_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo03_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo04_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo05_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo06_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo07_600x.png" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo08_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                </div>
+
+                <div class="logo-box">
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo01_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo02_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo03_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo04_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo05_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo06_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo07_600x.png" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo08_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+
+        <section class="instagram-gallery grid">
+            <div class="instagram-gallery__title">
+                <h1>Well, Aren't You Darling!</h1>
+                <h2>Tag @UNIQUEVINTAGE to be featured</h2>
+            </div>
+            <div class="instagram-gallery__grid-container">
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-1.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-2.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-3.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-4.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-5.jpg" alt="">  
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-6.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-7.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-8.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-9.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-10.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-11.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-12.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="banner2 banner2__footer">
+            <img src="./assests/img/main/banner_footer.webp" alt="">
+        </section>
+        
+    </main>
+    <footer class="footer">
+        <div class="footer__social-list">
+            <a href="" class="social-list-item">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="" class="social-list-item">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="" class="social-list-item">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="" class="social-list-item">
+                <i class="fa-brands fa-pinterest"></i>
+            </a>
+            <a href="" class="social-list-item">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="" class="social-list-item">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </div>
+        <div class="footer__content-top">
+            <div class="footer__block-discount">
+                <h4 class="block__title">WANT 10% OFF?</h4>
+                <h4 class="block__title">WANT 10% OFF?</h4>
+            </div>
+            <div class="footer__block-account footer__block">
+                <input type="checkbox" id="block__checkbox-account" class="block__checkbox-input">
+                <label for="block__checkbox-account" class="block__checkbox-label">
+                    <h4 class="block__title">MY ACCOUNT</h4>
+                    <i class="fa-solid fa-plus block__checkbox-more-icon"></i>
+                    <i class="fa-solid fa-minus block__checkbox-less-icon"></i>
+                </label>              
+                <ul class="block__list">
+                    <li class="block__item"><a href="" class="block__item-link">My info</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Order Status</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Start My Exchange Or Return</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Manage Your Darling Rewards</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Gift Cards</a></li>
+                </ul>
+            </div>
+            <div class="footer__block-help footer__block">
+                <input type="checkbox" id="block__checkbox-help" class="block__checkbox-input">
+                <label for="block__checkbox-help" class="block__checkbox-label">
+                    <h4 class="block__title">HELP</h4>
+                    <i class="fa-solid fa-plus block__checkbox-more-icon"></i>
+                    <i class="fa-solid fa-minus block__checkbox-less-icon"></i>
+                </label>              
+                <ul class="block__list">
+                    <li class="block__item"><a href="" class="block__item-link">FAQS</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Bulk Order Policy</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Sizing & Fit Guide</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Promotions</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Student & Grads Discounts</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Teacher & Military Discounts</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">UV Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer__block-company">
+                <input type="checkbox" id="block__checkbox-company" class="block__checkbox-input">
+                <label for="block__checkbox-company" class="block__checkbox-label">
+                    <h4 class="block__title">COMPANY</h4>
+                    <i class="fa-solid fa-plus block__checkbox-more-icon"></i>
+                    <i class="fa-solid fa-minus block__checkbox-less-icon"></i>
+                </label>  
+                <ul class="block__list">
+                    <li class="block__item"><a href="" class="block__item-link">Out Story</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Wholesale</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Affiliate Program</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Press</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Corporate Responsibility</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">Accessibility Policy</a></li>
+                    <li class="block__item"><a href="" class="block__item-link">ThredUp Clean Out Kit</a></li>
+                </ul>
+            </div>
+            <div class="footer__block-contact">
+                <h4 class="block__title">CONTACT US</h4>
+                <div class="block-contact__method">
+                    <div class="contact__method contact__phone">
+                        <i class="fa-solid fa-phone"></i>
+                        <div class="contact__group">
+                            <span>Contact Customer Service</span>
+                            <span>(800)721-6589</span>
+                        </div>
+                    </div>
+                    <div class="contact__method contact__text">
+                        <i class="fa-solid fa-message"></i>
+                        <div class="contact__group">
+                            <span>Chat with us</span>
+                            <span>Live Chat</span>
+                        </div>
+                    </div>
+                    <div class="contact__method contact__mail">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div class="contact__group">
+                            <span>Email Us:</span>
+                            <span>Service@Uniquevintage.com</span>
+                        </div>
+                    </div>
+                    <div class="contact__method contact__meet">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div class="contact__group">
+                            <span>8:30 am - 5:00pm PST</span>
+                            <span>Monday - Friday</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-copyright">
+                <i class="footer__bottom-copyright-icon fa-regular fa-copyright"></i>
+                <span class="footer__bottom-copyright-info">2002 - 2023 Unique Vintage. All Rights Reserved.</span>
+            </div>
+            <div class="footer__bottom-terms">
+                <a href="" class="footer__bottom-terms-link">PRIVACY POLICY</a>
+                <a href="" class="footer__bottom-terms-link">TERMS & CONDITIONS</a>
+        </div>
+    </footer>
+</body>
+<script>
+    //Banner Slider
+    const slides = document.querySelectorAll(".slide");
+    let curr = 0;
+
+    document.getElementById("next").onclick = () =>{
+        slides[curr].classList.remove("active");
+        curr = (curr + 1) % slides.length; //Chia lấy dư để đảm bảo curr nằm trong khoảng [0, length - 1]
+        slides[curr].classList.add("active");
+    }
+
+    document.getElementById("prev").onclick = () =>{
+        slides[curr].classList.remove("active");
+        curr = (curr - 1 + slides.length) % slides.length;//Cộng length để tránh gặp số âm và vòng ngược lại
+        slides[curr].classList.add("active");
+    }
+
+    setInterval(() => {
+        slides[curr].classList.remove("active");
+        curr = (curr + 1) % slides.length;
+        slides[curr].classList.add("active");
+    }, 3000);
+
+    // New Arrivals Slider
+    const list = document.querySelector('.new_arrivals__list');
+    const items = document.querySelectorAll('.new_arrivals__item');
+    const btnNext = document.getElementById('new_arrivals_next');
+    const btnPrev = document.getElementById('new_arrivals_prev');
+
+    const itemsPerSlide = 5;
+    const itemGap = 20;
+    const itemWidth = items[0].offsetWidth + itemGap;
+    const totalItems = items.length;
+    const totalSlides = Math.ceil(totalItems / itemsPerSlide);
+    const maxSlide = Math.max(0, Math.ceil(totalItems / itemsPerSlide) - 1);
+
+    let currentSlide = 0;
+
+    function slideTo(slide) {
+        const moveX = (slide % totalSlides) * (itemsPerSlide * itemWidth);
+        list.style.transform = `translateX(-${moveX}px)`;
+    }
+
+    btnNext.onclick = () => { 
+        currentSlide = (currentSlide + 1) % totalSlides;
+        slideTo(currentSlide);
+    };
+
+    btnPrev.onclick = () => {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        slideTo(currentSlide);
+    };
+
+</script>
+</html>
