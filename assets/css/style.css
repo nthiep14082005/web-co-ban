@@ -386,7 +386,7 @@ ul {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), /* Hiệu ứng bóng dưới */
                 -2px 2px 8px rgba(0, 0, 0, 0.1), /* Bóng bên trái */
                 2px 2px 8px rgba(0, 0, 0, 0.1);  /* Bóng bên phải */    
-    background-color: #ccc;
+    background: #CAB79C;
 }
 #container .backgr {
     background-color: hsl(0, 99%, 39%);
@@ -460,7 +460,8 @@ ul {
 
 .list-items .img-sales {
     width: 100%;
-    height: auto;
+    height: 250px;
+    overflow: hidden;
     margin-top: 30px;
 }
 .list-items .img-sales > img {
