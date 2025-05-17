@@ -55,35 +55,36 @@
             </div>
             <ul class="navbar__nav">
                 <li class="nav-item">
-                    <a href="./index.html" class="nav-link">HOME</a>
+                    <a href="/" class="nav-link">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../index.html" class="nav-link">SHOP</a>
+                    <a href="#" class="nav-link">SHOP</a>
                 </li>
                 <li class="nav-item">
-                    <a href="../Review/index.html" class="nav-link">REVIEW</a>
+                    <a href="#" class="nav-link">REVIEW</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">MORE</a>
                 </li>
             </ul>
         </nav>
-
-        <input type="text" class="item-search-input" placeholder="Search...">
     </header>
     
     <main class="main">
-        <section class="slider">
-            <img src="./assests/img/main/banner_sale.webp" alt="" class="slide active">
-            <img src="./assests/img/main/banner_spring.webp" alt="" class="slide">
-            <img src="./assests/img/main/banner_disney.webp" alt="" class="slide">
-            <button class="slider__btn slider__btn-prev" id="prev">
-                <i class="fa-solid fa-arrow-left"></i>
-            </button>
-            <button class="slider__btn slider__btn-next" id="next">
-                <i class="fa-solid fa-arrow-right"></i>
-            </button>
-        </section>
+        <div class="slider_box">
+            <input type="text" class="item-search-input" placeholder="Search...">
+            <section class="slider">
+                <img src="./assests/img/main/banner_sale.webp" alt="" class="slide active">
+                <img src="./assests/img/main/banner_spring.webp" alt="" class="slide">
+                <img src="./assests/img/main/banner_disney.webp" alt="" class="slide">
+                <button class="slider__btn slider__btn-prev" id="prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="slider__btn slider__btn-next" id="next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </section>
+        </div>
 
         <section class="shop-by-era grid">
             <div class="shop-by-era__title grid__column-2">
@@ -355,6 +356,7 @@
                             </div>
                         </div>
                     </div>
+                    
                 </div>
                 <button class="new_arrivals__btn new_arrivals__btn-next" id="new_arrivals_next">
                     <i class="fa-solid fa-arrow-right"></i>
@@ -617,33 +619,51 @@
 
     // New Arrivals Slider
     const list = document.querySelector('.new_arrivals__list');
-    const items = document.querySelectorAll('.new_arrivals__item');
-    const btnNext = document.getElementById('new_arrivals_next');
-    const btnPrev = document.getElementById('new_arrivals_prev');
-
-    const itemsPerSlide = 5;
-    const itemGap = 20;
-    const itemWidth = items[0].offsetWidth + itemGap;
-    const totalItems = items.length;
-    const totalSlides = Math.ceil(totalItems / itemsPerSlide);
-    const maxSlide = Math.max(0, Math.ceil(totalItems / itemsPerSlide) - 1);
+    const btnNext = document.querySelector('.new_arrivals__btn-next');
+    const btnPrev = document.querySelector('.new_arrivals__btn-prev');
 
     let currentSlide = 0;
 
-    function slideTo(slide) {
-        const moveX = (slide % totalSlides) * (itemsPerSlide * itemWidth);
-        list.style.transform = `translateX(-${moveX}px)`;
+    function getItems() {
+        return document.querySelectorAll('.new_arrivals__item');
     }
 
-    btnNext.onclick = () => { 
-        currentSlide = (currentSlide + 1) % totalSlides;
-        slideTo(currentSlide);
+    function slideTo(slide) {
+        const items = getItems();
+        if (items.length === 0) return;
+
+        const itemWidth = items[0].offsetWidth; // Sửa lỗi `item` chưa được định nghĩa
+        const scrollAmount = itemWidth * slide;
+        list.style.transform = `translateX(-${scrollAmount}px)`;
+    }
+
+    btnNext.onclick = () => {
+        const items = getItems();
+        const itemWidth = items[0].offsetWidth;
+        const visibleWidth = list.offsetWidth;
+        const itemsPerView = Math.floor(visibleWidth / itemWidth);
+        const maxSlide = items.length - itemsPerView;
+        
+        if (currentSlide < maxSlide) {
+            currentSlide++;
+        } else {
+            currentSlide = 0; 
+        }
+    slideTo(currentSlide);
+
     };
 
     btnPrev.onclick = () => {
-        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
-        slideTo(currentSlide);
+        if (currentSlide > 0) {
+            currentSlide--;
+            slideTo(currentSlide);
+        }
     };
+
+    // Đảm bảo slider điều chỉnh đúng vị trí khi thay đổi kích thước màn hình
+    window.addEventListener('resize', () => {
+        slideTo(currentSlide);
+    });
 
 </script>
 </html>

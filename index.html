@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHOP | Cao Cấp </title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
-    <link rel="stylesheet" href="./assets/js/script.js">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assests/style.css">
     <link rel="stylesheet" href="./fontawesome-free-6.7.2-web/css/all.min.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -16,7 +16,7 @@
             <span class="header__list-lang">EN</span>
 
             <a href="/" class="header__list-logo">
-                <img src="./assets/img/large_logo_black.webp" alt="Unique Vintage">
+                <img src="./assests/img/large_logo_black.webp" alt="Unique Vintage">
             </a>
             <ul class="header__list-items">
                 <li class="items-item">
@@ -53,872 +53,427 @@
                     <i class="menu__list-close fa-solid fa-xmark"></i>
                 </label>
             </div>
-            ///
             <ul class="navbar__nav">
                 <li class="nav-item">
-                    <a href="./blogs/index.html" class="nav-link">Home</a>
+                    <a href="/" class="nav-link">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./shopIndex.html" class="nav-link">Shop</a>
+                    <a href="#" class="nav-link">SHOP</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./Review/index.html" class="nav-link">Review</a>
+                    <a href="#" class="nav-link">REVIEW</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">More</a>
+                    <a href="#" class="nav-link">MORE</a>
                 </li>
             </ul>
         </nav>
-
-        <input type="text" class="item-search-input" placeholder="Search...">
     </header>
-    <div id="main">
-        
-        
-        <div id="navigationBar">
-            <!-- start nav -->
     
-            <div id="nav">
-                <div class="box-nav">
-                    <div class="first-nav-slide" tabindex="0"><i class="icon-menu-nav ti-menu-alt"></i> <div>Danh mục sản phẩm</div> 
-                        <ul class="subnav">
-                            <!-- <li class="nav-slide">Mặt hàng từ 1-2 triệu </li>
-                            <li class="nav-slide">Mặt hàng từ 3-5 triệu </li>
-                            <li class="nav-slide">Mặt hàng từ 5-10 triệu </li> -->
-                            <li class="nav-slide"><div class="clasm"></div>Thời trang năm 1990 </li>
-                            <li class="nav-slide"><div class="clasm"></div>Thời trang năm 1994 </li>
-                            <li class="nav-slide"><div class="clasm"></div>Thời trang năm 2000</li>
-                            <li class="nav-slide"><div class="clasm"></div>Thời trang năm 2005</li>
-                            <li class="nav-slide new-pop"><div class="clasm"></div>Phụ kiện <div><i class="ti-arrow-right"></i></div></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="box-des">
-                    <div class="des">Chất lượng sản phẩm</div>
-                    <div class="des">Gọi tư vấn ngay: 1234567891</div>
-                </div>
-            </div>
-            <!-- end nav -->
+    <main class="main">
+        <div class="slider_box">
+            <input type="text" class="item-search-input" placeholder="Search...">
+            <section class="slider">
+                <img src="./assests/img/main/banner_sale.webp" alt="" class="slide active">
+                <img src="./assests/img/main/banner_spring.webp" alt="" class="slide">
+                <img src="./assests/img/main/banner_disney.webp" alt="" class="slide">
+                <button class="slider__btn slider__btn-prev" id="prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="slider__btn slider__btn-next" id="next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </section>
         </div>
 
+        <section class="shop-by-era grid">
+            <div class="shop-by-era__title grid__column-2">
+                <h2>Shop by Era</h2>
+            </div>
+            <div class="shop-by-era__list grid__column-10">
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/1920s.webp" alt="1920s">
+                    <figcaption class="era-label">1920s</figcaption>
+                </figure>
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/1930s.webp" alt="1930s">
+                    <figcaption class="era-label">1930s</figcaption>
+                </figure>
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/1940s.webp" alt="1940s">
+                    <figcaption class="era-label">1940s</figcaption>
+                </figure>
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/1950s.webp" alt="1950s">
+                    <figcaption class="era-label">1950s</figcaption>
+                </figure>
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/1960s.webp" alt="1960s">
+                    <figcaption class="era-label">1960s</figcaption>
+                </figure>
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/1970s.webp" alt="1970s">
+                    <figcaption class="era-label">1970s</figcaption>
+                </figure>
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/1980s.webp" alt="1980s">
+                    <figcaption class="era-label">1980s</figcaption>
+                </figure>
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/1990s.webp" alt="1990s">
+                    <figcaption class="era-label">1990s</figcaption>
+                </figure>
+                <figure class="era-card grid__column-2-4">
+                    <img src="./assests/img/shopbyera/y2k.webp" alt="Y2K">
+                    <figcaption class="era-label">Y2K</figcaption>
+                </figure>
+            </div>
+        </section>
 
+        <section class="banner2">
+            <a href="" class="banner2__link">
+                <img src="./assests/img/main/banner_disney-mobile.webp" alt="" class="banner2__img">
+            </a>
+            <a href="" class="banner2__link">
+                <img src="./assests/img/main/banner_bikini.webp" alt="" class="banner2__img">
+            </a>
+        </section>
 
+        <section class="category">
+            <a href="#" class="category__selection">
+                <figure>
+                    <img src="./assests/img/category/bestsellers.webp" alt="" class="category__selection-img">
+                    <figcaption class="category__selection-desc">BESTSELLERS</figcaption>
+                </figure>
+            </a>
+            <a href="#" class="category__selection">
+                <figure>
+                    <img src="./assests/img/category/spring-dresses.webp" alt="" class="category__selection-img">
+                    <figcaption class="category__selection-desc">SPRING DRESSES</figcaption>
+                </figure>
+            </a>
+            <a href="#" class="category__selection">
+                <figure>
+                    <img src="./assests/img/category/barbie.webp" alt="" class="category__selection-img">
+                    <figcaption class="category__selection-desc">BARBIE X UNIQUE VINTAGE</figcaption>
+                </figure>
+            </a>
+            <a href="#" class="category__selection">
+                <figure>
+                    <img src="./assests/img/category/disney-bambi.webp" alt="" class="category__selection-img">
+                    <figcaption class="category__selection-desc">DISNEY COLLECTION BY UNIQUE VINTAGE</figcaption>
+                </figure>
+            </a>
+            <a href="#" class="category__selection">
+                <figure>
+                    <img src="./assests/img/category/special-occassion.webp" alt="" class="category__selection-img">
+                    <figcaption class="category__selection-desc">PROM COLLECTION</figcaption>
+                </figure>
+            </a>
+            <a href="#" class="category__selection">
+                <figure>
+                    <img src="./assests/img/category/accessories.webp" alt="" class="category__selection-img">
+                    <figcaption class="category__selection-desc">SHOP ACCESSORIES</figcaption>
+                </figure>
+            </a>
+        </section>
 
-            <div class="container-slider">
-                <div class="img-slider">
-                    <img src="./assets/img/image copy.png" alt="slide-1" class="slider-l">
-                    <img src="./assets/img/img-slider.jpg" alt="slide-2" class="slider-l">
-                    <img src="./assets/img/image.png" alt="slide-3" class="slider-l">
-                </div>
-            </div>
+        <section class="banner2">
+            <a href="" class="banner2__link">
+                <img src="./assests/img/main/banner_halloween.webp" alt="" class="banner2__img">
+            </a>
+            <a href="" class="banner2__link">
+                <img src="./assests/img/main/banner_western.webp" alt="" class="banner2__img">
+            </a>
+        </section>
 
+        <section class="new_arrivals">
+            <h3 class="new_arrivals__title">New Arrivals</h3>
+            <div class="new_arrivals__container">
+                <button class="new_arrivals__btn new_arrivals__btn-prev" id="new_arrivals_prev">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <div class="new_arrivals__list">
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/black-shirred-swing-dress.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                Unique Vintage Black Shirred Swing Dress
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    2.210.300đ
+                            </p>
+                            <div class="new_arrivals__item-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="new_arrivals__item-rating-count">(5)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/cat-face-print-cotton-fit-flare-dress.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                Cat Face Print Cotton Fit & Flare Dress
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    990.600đ
+                            </p>
+                            <div class="new_arrivals__item-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="new_arrivals__item-rating-count">(12)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/cherries-berries-print-cotton-skirt-overalls.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                Cherries & Berries Print Cotton Skirt Overalls
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    1.230.000đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/ivory-rainbow-heart-shaped-patch-sweater.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                Ivory Rainbow Heart Shaped Patch Sweater
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    1.110.500đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/multicolor-fruit-print-cotton-swing-dress.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                Multicolor Fruit Print Cotton Swing Dress
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    3.120.100đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/orchid-bloom-red-white-plaid-picnic-swing-dress.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                Orchid Bloom Red & White Plaid Picnic Swing Dress
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    2.210.300đ
+                            </p>
+                            <div class="new_arrivals__item-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="new_arrivals__item-rating-count">(2)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/pink-denim-tube-top-romper.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                Pink Denim Tube Top Romper
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    2.210.300đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/veggie-garden-embroidered-cotton-midi-dress.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                Veggie Garden Embroidered Cotton Midi Dress
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    2.220.200đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/white-collared-athletic-a-line-dress.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                White Collared Athletic A-Line Dress
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    2.250.500đ
+                            </p>
+                        </div>
+                    </div>
+                    <div class="new_arrivals__item">
+                        <a href="" class="new_arrivals__item-link">
+                            <img src="./assests/img/new_arrivals/white-satin-jacquard-bandeau-midi-dress.webp" alt="" class="new_arrivals__item-img">
+                        </a>
+                        <div class="new_arrivals__item-info">
+                            <p class="new_arrivals__item-name">
+                                White Satin Jacquard Bandeau Midi Dress
+                            </p>
+                            <p class="new_arrivals__item-price">
+                                    1.910.300đ
+                            </p>
+                            <div class="new_arrivals__item-rating">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="new_arrivals__item-rating-count">(27)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <button class="new_arrivals__btn new_arrivals__btn-next" id="new_arrivals_next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </section>
 
-            <!-- start sale items -->
-        <div id="container">
-            <div class="detail-items">
-                <div class="item-1 scale-items">
-                    <img src="./assets/img/image.png" alt="img-1">
-                    <button name="button" type="button">Chi tiết</button>
+        <section class="marquee__logo-section" style="background: url(./assests/img/marquee-logo/logo_bg_2000x.webp);">
+            <h2>As Featured in</h2>
+            <div class="marquee__logo-list">
+                <div class="logo-box">
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo01_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo02_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo03_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo04_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo05_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo06_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo07_600x.png" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo08_600x.webp" alt="" class="logo-item-img">
+                    </div>
                 </div>
-                <div class="item-2 scale-items">
-                    <img src="./assets/img/image copy 2.png" alt="img-2">
-                    <button name="button" type="button">Chi tiết</button>
-                </div>
-                <div class="item-3 scale-items">
-                    <img src="./assets/img/image copy 3.png" alt="img-3">
-                    <button name="button" type="button">Chi tiết</button>
-                </div>
-                <div class="item-4 scale-items">
-                    <img src="./assets/img/image copy 4.png" alt="img-4">
-                    <button name="button" type="button">Chi tiết</button>
-                </div>
-            </div>
 
-            <div class="sale-items backgr">
-                <div class="sale-slogan slg1"><h3 style="color: white;">Khuyến mại SHOCK!</h3> <div><img src="./assets/img/fire (1).png" alt="fire"></div></div>
-                <div class="contain-sale-items">
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 2.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>750,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
+                <div class="logo-box">
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo01_600x.webp" alt="" class="logo-item-img">
                     </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>360,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo02_600x.webp" alt="" class="logo-item-img">
                     </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 4.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>1,600,000đ</h5>
-                                <div>-9%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo03_600x.webp" alt="" class="logo-item-img">
                     </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>160,000đ</h5>
-                                <div>-20%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo04_600x.webp" alt="" class="logo-item-img">
                     </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>370,500đ</h5>
-                                <div>-10%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard"> 
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo05_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo06_600x.webp" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo07_600x.png" alt="" class="logo-item-img">
+                    </div>
+                    <div class="logo-item">
+                        <img src="./assests/img/marquee-logo/logo08_600x.webp" alt="" class="logo-item-img">
                     </div>
                 </div>
-                <div class="view-all whites">XEM TẤT CẢ</div>
-                <div class="no-space"></div>
             </div>
+            
+        </section>
 
+        <section class="instagram-gallery grid">
+            <div class="instagram-gallery__title">
+                <h1>Well, Aren't You Darling!</h1>
+                <h2>Tag @UNIQUEVINTAGE to be featured</h2>
+            </div>
+            <div class="instagram-gallery__grid-container">
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-1.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-2.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-3.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-4.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-5.jpg" alt="">  
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-6.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-7.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-8.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-9.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-10.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-11.jpg" alt="">
+                </div>
+                <div class="instagram-gallery__grid-item">
+                    <img src="./assests/img/insta_gallery/insta_img-12.jpg" alt="">
+                </div>
+            </div>
+        </section>
 
-
-
-            <div class="sale-items box-shadowsss">
-                <div class="sale-slogan slg2"><h3 style="color: black;">1990</h3> <div><i class="ti-infinite"></i></div></div>
-                <div class="contain-sale-items">
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 2.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>750,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>360,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 4.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>1,600,000đ</h5>
-                                <div>-9%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>160,000đ</h5>
-                                <div>-20%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>370,500đ</h5>
-                                <div>-10%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard"> 
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="view-all blacks">XEM TẤT CẢ</div>
-                <div class="no-space"></div>
-            </div>
-            <div class="sale-items box-shadowsss">
-                <div class="sale-slogan slg2"><h3 style="color: black;">1990</h3> <div><i class="ti-infinite"></i></div></div>
-                <div class="contain-sale-items">
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 2.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>750,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>360,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 4.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>1,600,000đ</h5>
-                                <div>-9%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>160,000đ</h5>
-                                <div>-20%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>370,500đ</h5>
-                                <div>-10%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard"> 
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="view-all blacks">XEM TẤT CẢ</div>
-                <div class="no-space"></div>
-            </div>
-            <div class="sale-items box-shadowsss">
-                <div class="sale-slogan slg2"><h3 style="color: black;">1990</h3> <div><i class="ti-infinite"></i></div></div>
-                <div class="contain-sale-items">
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 2.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>750,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>360,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 4.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>1,600,000đ</h5>
-                                <div>-9%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>160,000đ</h5>
-                                <div>-20%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>370,500đ</h5>
-                                <div>-10%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard"> 
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="view-all blacks">XEM TẤT CẢ</div>
-                <div class="no-space"></div>
-            </div>
-            <div class="sale-items box-shadowsss">
-                <div class="sale-slogan slg2"><h3 style="color: black;">1990</h3> <div><i class="ti-infinite"></i></div></div>
-                <div class="contain-sale-items">
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 2.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>750,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>360,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 4.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>1,600,000đ</h5>
-                                <div>-9%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>160,000đ</h5>
-                                <div>-20%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>370,500đ</h5>
-                                <div>-10%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard"> 
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="view-all blacks">XEM TẤT CẢ</div>
-                <div class="no-space"></div>
-            </div>
-            <div class="sale-items box-shadowsss">
-                <div class="sale-slogan slg2"><h3 style="color: black;">1990</h3> <div><i class="ti-infinite"></i></div></div>
-                <div class="contain-sale-items">
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 2.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>750,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>360,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 4.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>1,600,000đ</h5>
-                                <div>-9%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>160,000đ</h5>
-                                <div>-20%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>370,500đ</h5>
-                                <div>-10%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard"> 
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="view-all blacks">XEM TẤT CẢ</div>
-                <div class="no-space"></div>
-            </div>
-            <div class="sale-items box-shadowsss">
-                <div class="sale-slogan slg2"><h3 style="color: black;">1990</h3> <div><i class="ti-infinite"></i></div></div>
-                <div class="contain-sale-items">
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 2.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>750,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>360,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 4.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>1,600,000đ</h5>
-                                <div>-9%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>160,000đ</h5>
-                                <div>-20%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>370,500đ</h5>
-                                <div>-10%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard"> 
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="view-all blacks">XEM TẤT CẢ</div>
-                <div class="no-space"></div>
-            </div>
-            <div class="sale-items box-shadowsss">
-                <div class="sale-slogan slg2"><h3 style="color: black;">1990</h3> <div><i class="ti-infinite"></i></div></div>
-                <div class="contain-sale-items">
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 2.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>750,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>360,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 4.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>1,600,000đ</h5>
-                                <div>-9%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>160,000đ</h5>
-                                <div>-20%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>370,500đ</h5>
-                                <div>-10%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard"> 
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="view-all blacks">XEM TẤT CẢ</div>
-                <div class="no-space"></div>
-            </div>
-            <div class="sale-items box-shadowsss">
-                <div class="sale-slogan slg2"><h3 style="color: black;">1990</h3> <div><i class="ti-infinite"></i></div></div>
-                <div class="contain-sale-items">
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 2.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>750,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>360,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 4.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>1,600,000đ</h5>
-                                <div>-9%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>160,000đ</h5>
-                                <div>-20%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>370,500đ</h5>
-                                <div>-10%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard"> 
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="view-all blacks">XEM TẤT CẢ</div>
-                <div class="no-space"></div>
-            </div>
-            <div class="sale-items box-shadowsss">
-                <div class="sale-slogan slg2"><h3 style="color: black;">1990</h3> <div><i class="ti-infinite"></i></div></div>
-                <div class="contain-sale-items">
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 2.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>750,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>360,000đ</h5>
-                                <div>-17%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 4.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>1,600,000đ</h5>
-                                <div>-9%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image copy 3.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>160,000đ</h5>
-                                <div>-20%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard">
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                    <div class="list-items">
-                        <div class="img-sales"><img src="./assets/img/image.png" alt=""></div>
-                        <div class="title-items-sales">
-                            <p>welcom to our shop</p>
-                            <div class="price-items">
-                                <h5>370,500đ</h5>
-                                <div>-10%</div>
-                            </div>
-                        </div>
-                        <button class="btn-add-shoppingcard"> 
-                            <div class="icon-add"><i class="ti-shopping-cart"></i></div>
-                            <div class="title-add-shoppingcard">Thêm vào giỏ hàng</div>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="view-all blacks">XEM TẤT CẢ</div>
-                <div class="no-space"></div>
-            </div>
-        </div>
-    </div>
+        <section class="banner2 banner2__footer">
+            <img src="./assests/img/main/banner_footer.webp" alt="">
+        </section>
+        
+    </main>
     <footer class="footer">
         <div class="footer__social-list">
             <a href="" class="social-list-item">
@@ -1039,6 +594,76 @@
         </div>
     </footer>
 </body>
-</html>
+<script>
+    //Banner Slider
+    const slides = document.querySelectorAll(".slide");
+    let curr = 0;
 
-<script src="./assets/js/script.js"></script>
+    document.getElementById("next").onclick = () =>{
+        slides[curr].classList.remove("active");
+        curr = (curr + 1) % slides.length; //Chia lấy dư để đảm bảo curr nằm trong khoảng [0, length - 1]
+        slides[curr].classList.add("active");
+    }
+
+    document.getElementById("prev").onclick = () =>{
+        slides[curr].classList.remove("active");
+        curr = (curr - 1 + slides.length) % slides.length;//Cộng length để tránh gặp số âm và vòng ngược lại
+        slides[curr].classList.add("active");
+    }
+
+    setInterval(() => {
+        slides[curr].classList.remove("active");
+        curr = (curr + 1) % slides.length;
+        slides[curr].classList.add("active");
+    }, 3000);
+
+    // New Arrivals Slider
+    const list = document.querySelector('.new_arrivals__list');
+    const btnNext = document.querySelector('.new_arrivals__btn-next');
+    const btnPrev = document.querySelector('.new_arrivals__btn-prev');
+
+    let currentSlide = 0;
+
+    function getItems() {
+        return document.querySelectorAll('.new_arrivals__item');
+    }
+
+    function slideTo(slide) {
+        const items = getItems();
+        if (items.length === 0) return;
+
+        const itemWidth = items[0].offsetWidth; // Sửa lỗi `item` chưa được định nghĩa
+        const scrollAmount = itemWidth * slide;
+        list.style.transform = `translateX(-${scrollAmount}px)`;
+    }
+
+    btnNext.onclick = () => {
+        const items = getItems();
+        const itemWidth = items[0].offsetWidth;
+        const visibleWidth = list.offsetWidth;
+        const itemsPerView = Math.floor(visibleWidth / itemWidth);
+        const maxSlide = items.length - itemsPerView;
+        
+        if (currentSlide < maxSlide) {
+            currentSlide++;
+        } else {
+            currentSlide = 0; 
+        }
+    slideTo(currentSlide);
+
+    };
+
+    btnPrev.onclick = () => {
+        if (currentSlide > 0) {
+            currentSlide--;
+            slideTo(currentSlide);
+        }
+    };
+
+    // Đảm bảo slider điều chỉnh đúng vị trí khi thay đổi kích thước màn hình
+    window.addEventListener('resize', () => {
+        slideTo(currentSlide);
+    });
+
+</script>
+</html>

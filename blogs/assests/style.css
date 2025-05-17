@@ -45,7 +45,8 @@ body, html {
     flex-direction: column;
     padding: 10px 0px;
     position: fixed;
-    position: relative;
+    z-index: 99;
+    background-color: #fff;
 }
 
 .header__list {
@@ -55,7 +56,7 @@ body, html {
     align-items: center;
     padding: 15px 20px;
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
 }
 
 .header__list-lang {
@@ -95,12 +96,13 @@ body, html {
 }
 
 /*Navigation*/
-
 .navbar {
     display: flex;
     justify-content: center;
-    /* position: relative;  */
+    width: 100%;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    z-index: 99;
 }
 
 .navbar__nav {
@@ -163,6 +165,7 @@ body, html {
     height: 70%;
     margin: auto;
     overflow: hidden;
+    margin-top: 130px;
   }
   
 .slide {
@@ -187,7 +190,6 @@ body, html {
     border: none;
     padding: 100% 20px;
     cursor: pointer;
-
 }
 
 .slider__btn:hover,
@@ -323,13 +325,17 @@ body, html {
 }
 
 .category__selection-desc {
-    display: block;
+    display: -webkit-box;
     color: #000;
     text-align: center;
     font-size: 16px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-    margin-top: 16px;
+    margin-bottom: 24px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
 }
 
 /*New Arrivals*/
@@ -337,7 +343,6 @@ body, html {
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 1300px;
     position: relative;
     margin: 50px 0;
 }
@@ -367,8 +372,7 @@ body, html {
 }
 
 .new_arrivals__item {
-    width: calc((100% - 80px) / 5); /* 5 items với 4 khoảng cách 20px */
-    min-width: calc((100% - 80px) / 5);
+    flex: 0 0 calc((100% - 80px)/ 5); /*flex-basis cho sự linh hoạt, không fix cứng*/
     flex-shrink: 0;
     transition: transform 0.3s ease;
 }
@@ -401,11 +405,11 @@ body, html {
 }
 
 .new_arrivals__btn-prev {
-    left: -30px;
+    left: -50px;
 }
 
 .new_arrivals__btn-next {
-    right: 70px;
+    right: 50px;
 }
 
 .new_arrivals__btn i {
@@ -563,6 +567,7 @@ body, html {
     background-color: hsl(2, 93%, 93%);
     display: flex;
     flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer__social-list {
@@ -682,10 +687,21 @@ i.block__checkbox-less-icon {
 }
 /*Tablet*/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        position: fixed;
+        z-index: 10;
+        background-color: #fff;
+        z-index: 99;
+    }
+
     .item-search-input {
+        position: fixed;
         width: 100%;
         display: block;
         padding: 10px;
+        top: 125px;
+        left: 0;
+        z-index: 10;
     }
 
     .item-search {
@@ -700,12 +716,29 @@ i.block__checkbox-less-icon {
         gap: 4px;
     }
 
+    .navbar {
+        position: absolute;
+        top: 100%;
+        background-color: #fff;
+        z-index: 99;
+    }
+
+    .navbar__nav {
+        width: 100%;
+    }
+
     .navbar__nav .nav-item a{
         padding: 10px 70px;
     }
 
     .menu__toggle {
         display: none;
+    }
+
+    /*Slider*/
+    .slider {
+        margin-top: 16px;
+        z-index: 1;
     }
 
     /*Banner*/
@@ -729,6 +762,34 @@ i.block__checkbox-less-icon {
         gap: 20px;
     }
 
+    /*New arrivals*/
+    .new_arrivals__title {
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .new_arrivals__btn {
+        width: 70px;
+        height: 70px;
+    }
+
+    .new_arrivals__btn-prev {
+        left: -50px;
+    }
+
+    .new_arrivals__btn-next {
+        right: 50px;
+    }
+
+    .new_arrivals__btn i {
+        font-size: 38px;
+    }
+
+    .new_arrivals__item {
+        flex: 0 0 calc((100% - 40px)/ 3);
+    }
+
+
     /*Shopify*/
     .shopify__grid-container {
         grid-template-columns: repeat(2, 1fr);
@@ -748,7 +809,7 @@ i.block__checkbox-less-icon {
     .header {
         position: fixed;
         background-color: #fff;
-        z-index: 1;
+        z-index: 99;
     }
 
     .header__list {
@@ -773,11 +834,12 @@ i.block__checkbox-less-icon {
 
     .item-search-input {
         display: block;
+        position: fixed;
         padding: 10px;
-        position: absolute;
-        top: 100%;
+        top: 80px;
         left: 0;    
         width: 100%;
+        z-index: 99;
     }
     
     .item-search-input:focus {
@@ -789,13 +851,14 @@ i.block__checkbox-less-icon {
         position: relative;
         justify-content: flex-start;
         top: 50%;
+        background-color: transparent;
+        z-index: 99;
     }
 
     .navbar__nav {
         visibility: hidden;
         opacity: 0;
         flex-direction: column;
-        /* position: absolute; */
         top: -50px;
         left: 0;
         width: 100%;
@@ -834,7 +897,8 @@ i.block__checkbox-less-icon {
 
     .menu__list-close,.menu__list-icon {
         position: absolute;
-        top: -100px;
+        top: -95px;
+        left: 32px;
     }
     
     .menu__list .menu__list-close {
@@ -872,6 +936,11 @@ i.block__checkbox-less-icon {
         display: block;
     }
 
+    /*Slider*/
+    .slider {
+        margin-top: 115px;
+    }
+
     /*Banner*/
     .banner2 {
         flex-direction: column;
@@ -887,6 +956,37 @@ i.block__checkbox-less-icon {
         gap: 20px;
     }
 
+    /*New Arrivals*/
+    .new_arrivals {
+        max-width: 900px;
+    }
+
+    .new_arrivals__title {
+        text-align: left;
+        margin-left: 50px;
+    }
+    
+    .new_arrivals__item {
+       flex: 0 0 calc((100% - 40px)/ 2);
+    }
+
+    .new_arrivals__btn {
+        width: 60px;
+        height: 60px;
+    } 
+
+    .new_arrivals__btn-prev {
+        left: -50px;
+    }
+
+    .new_arrivals__btn-next {
+        right: 50px;
+    }
+
+    .new_arrivals__btn i {
+        font-size: 28px;
+    }
+
     /*Shopify*/
     .shopify__grid-container {
         grid-template-columns: repeat(2, 1fr);
@@ -895,7 +995,7 @@ i.block__checkbox-less-icon {
 
     /*Footer*/
     .footer__content-top {
-        flex-direction: column;
+        flex-direction: column;;
     }
 
     .footer__content-top {
