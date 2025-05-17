@@ -19,6 +19,7 @@ head {
 #main {
     height: auto; /* -> auto */
     align-items: center;
+    margin-top: 90px; /* Đẩy nội dung xuống dưới header để không bị che */
 }
 
 /*Header*/
@@ -32,7 +33,12 @@ head {
     flex-direction: column;
     padding: 10px 0px;
     position: fixed;
-    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff; /* Đảm bảo header có nền trắng che phủ nội dung dưới */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .header__list {
@@ -386,7 +392,7 @@ ul {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), /* Hiệu ứng bóng dưới */
                 -2px 2px 8px rgba(0, 0, 0, 0.1), /* Bóng bên trái */
                 2px 2px 8px rgba(0, 0, 0, 0.1);  /* Bóng bên phải */    
-    background-color: #ccc;
+    background: #CAB79C;
 }
 #container .backgr {
     background-color: hsl(0, 99%, 39%);
@@ -460,7 +466,8 @@ ul {
 
 .list-items .img-sales {
     width: 100%;
-    height: auto;
+    height: 250px;
+    overflow: hidden;
     margin-top: 30px;
 }
 .list-items .img-sales > img {
@@ -781,6 +788,22 @@ i.block__checkbox-less-icon {
 
 /*Mobile*/
 @media screen and (max-width: 767px) {
+    .header {
+        width: 100%;
+        min-width: 0;
+        padding: 0 4px;
+        margin-top: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    #main, #container {
+        margin-top: 90px;
+    }
     #nav .box-des {
         display: none;
     }
@@ -792,12 +815,21 @@ i.block__checkbox-less-icon {
         width: 100%;
         min-width: 0;
         padding: 0 4px;
-        margin-top: 35px; /* Đẩy header xuống một chút để không dính sát trên mobile */
+        margin-top: 300px;
+        margin-top: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
     }
     .header__list {
         justify-content: flex-end;
         width: 100%;
-        padding: 0 4px;
+        padding: 5px 6px;
+        margin-top: 18px;
     }
     .header__list-logo img{
         width: 80%;
@@ -814,15 +846,17 @@ i.block__checkbox-less-icon {
     }
     .header .item-search-input {
         padding: 5px;
+        position: relative;
+        top: -18px;
     }
     #navigationBar {
         width: 100%;
-        margin-top: 70px;
+        margin-top: 23px;
     }
     .navbar {
         position: relative;
         justify-content: flex-start;
-        top: -70px;
+        top: -54px;
         width: 100%;
     }
     .navbar__nav {
@@ -1005,7 +1039,7 @@ i.block__checkbox-less-icon {
         display: block !important;
         position: absolute;
         left: 0;
-        top: -138px;
+        top: -184px;
         width: 100vw;
         min-width: 100vw;
         max-width: 100vw;
