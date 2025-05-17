@@ -33,6 +33,7 @@ head {
     flex-direction: column;
     padding: 10px 0px;
     position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -466,7 +467,7 @@ ul {
 
 .list-items .img-sales {
     width: 100%;
-    height: 250px;
+    height: 226px;
     overflow: hidden;
     margin-top: 30px;
 }
