@@ -260,8 +260,10 @@ ul {
     color: #111111;
 }
 
-#nav .box-des .des {
+#nav .box-des .des, #nav .box-des .des a {
     margin-left: 50px;
+    text-decoration: none;
+    color: #4d4d4d;
 }
 
 
@@ -334,7 +336,7 @@ ul {
     width: 100%;
     height: 100%;
 }
-
+.sale-slogan ,.slg1
 
 
 .detail-items > div > img {
@@ -438,6 +440,10 @@ ul {
     gap: 20px;
     width: 50%;
     font-size: 25px;
+    margin-left: 44px;
+    padding-top: 35px;
+    margin-bottom: 40px;
+    color: white;
 }
 .sale-items > .sale-slogan > h3 {
     margin: 20px 0 20px 50px;
@@ -1127,4 +1133,8 @@ i.block__checkbox-less-icon {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
+}
+
+.sale-slogan.slg1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
