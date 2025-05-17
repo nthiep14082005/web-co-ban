@@ -173,7 +173,7 @@ hr{
 }
 
 .reviews__stars-average i{
-    color: rgb(243, 236, 26);
+    color: hsl(2, 93%, 93%);
 }
 
 .reviews__rating-row{
@@ -185,7 +185,7 @@ hr{
 }
 
 .reviews__rating-row i{
-    color: rgb(243, 236, 26);
+    color: hsl(1, 62%, 83%);
 }
 
 .reviews__rating-row .reviews__bar{
@@ -235,7 +235,7 @@ hr{
     background: rgba(0,0,0,0.8);
     justify-content: center;
     align-items: center;
-    z-index: 3;
+    z-index: 100;
     text-align: center;
 }
 
@@ -433,7 +433,7 @@ hr{
 }
 
 .reviews__rating-stars .reviews__star-icons i{
-    color: rgb(243, 236, 26);
+    color: hsl(1, 62%, 83%);
 }
 
 .reviews__rating-stars p{
@@ -459,8 +459,12 @@ hr{
     display: flex;
     gap: 10px;
     align-items: center;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    margin-top: 50px;
+}
+
+.reviews__rating-comment p{
+    font-size: 18px;  
 }
 
 .reviews__rating-comment .reviews__comment-recommend i{
@@ -1265,5 +1269,5 @@ i.block__checkbox-less-icon {
     .menu__toggle {
         display: none;
     }
-    
+
 }
