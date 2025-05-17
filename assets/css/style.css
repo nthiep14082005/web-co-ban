@@ -1004,15 +1004,6 @@ i.block__checkbox-less-icon {
     .sale-items {
         padding-bottom: 20px;
     }
-    /* Ẩn chất lượng sản phẩm trong footer */
-    .footer__block .block__title, 
-    .footer__block .block__item-link[href*="chất lượng"],
-    .footer__block .block__item-link[href*="chat-luong"],
-    .footer__block .block__item-link[href*="quality"],
-    .footer__block .block__item-link[title*="chất lượng"],
-    .footer__block .block__item-link[title*="quality"] {
-        display: none !important;
-    }
     /* Ẩn liên hệ SĐT */
     .block-contact__method .contact__method:has(i.fa-phone),
     .block-contact__method .contact__method:has(i[class*="phone"]),
