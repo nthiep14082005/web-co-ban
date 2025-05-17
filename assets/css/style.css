@@ -34,6 +34,12 @@ head {
     padding: 10px 0px;
     position: fixed;
     position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: #fff; /* Đảm bảo header có nền trắng che phủ nội dung dưới */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
 }
 
 .header__list {
@@ -109,6 +115,7 @@ head {
 }
 
 .navbar__nav .nav-item a {
+    background: white;
     position: relative;
     display: inline-block;
     text-decoration: none;
@@ -147,7 +154,7 @@ head {
 #navigationBar {
     background-color: #ebebeb;
     height: 46px;
-    margin-top: 60px;
+    margin-top: 129px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1), /* Hiệu ứng bóng dưới */
                 -2px 2px 8px rgba(0, 0, 0, 0.1), /* Bóng bên trái */
                 2px 2px 8px rgba(0, 0, 0, 0.1);  /* Bóng bên phải */
@@ -710,6 +717,11 @@ i.block__checkbox-less-icon {
         visibility: visible; 
         opacity: 1; 
         transform: translateX(0); 
+        position: relative;
+        top: -9px;
+        width: 100%;
+        padding-right: 50px;
+        background: white;
     }
 
     .navbar__nav .nav-item a {
