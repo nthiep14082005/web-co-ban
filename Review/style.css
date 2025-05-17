@@ -809,7 +809,12 @@ i.block__checkbox-less-icon {
 
     .item-search-input {
         display: block;
+        position: fixed;
         padding: 10px;
+        top: 80px;
+        left: 0;    
+        width: 100%;
+        z-index: 99;
     }
 
     .item-search-input:focus {
@@ -830,19 +835,16 @@ i.block__checkbox-less-icon {
         visibility: hidden;
         opacity: 0;
         flex-direction: column;
-        position: absolute;
-        top: 138px;
+        top: -50px;
         left: 0;
         width: 100%;
         background: #fff;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transform: translateX(-100%);
-        animation: opacity 0.3s ease-in;
-        z-index: 2;
+        transition: transform 0.3s ease-in, opacity 0.3s ease-in;
     }
 
     .navbar__nav .nav-item a {
-        padding: 20px 0;
         border: none;
         width: 100%;
         text-align: center;
@@ -856,6 +858,10 @@ i.block__checkbox-less-icon {
         border-bottom: 1px solid #ddd;
     }
 
+    .menu__toggle {
+        position: absolute;
+    }
+
     .menu__checkbox {
         display: none;
     }
@@ -863,6 +869,12 @@ i.block__checkbox-less-icon {
     .menu__list {
         margin-left: 10px;
         font-size: 20px;
+    }
+
+    .menu__list-close,.menu__list-icon {
+        position: absolute;
+        top: -95px;
+        left: 32px;
     }
 
     .menu__list .menu__list-close {
@@ -886,6 +898,10 @@ i.block__checkbox-less-icon {
         opacity: 1;
         transform: translateX(0);
         animation: slide__right 0.2s ease-in;
+    }
+
+    .menu__list-icon {
+        margin-top: 8px;
     }
 
     .menu__checkbox:checked ~ .menu__toggle .menu__list-icon {
@@ -1088,11 +1104,14 @@ i.block__checkbox-less-icon {
         z-index: 99;
     }
     .item-search-input {
+        position: fixed;
         width: 100%;
         display: block;
         padding: 10px;
+        top: 125px;
+        left: 0;
+        z-index: 10;
     }
-
     .item-search {
         display: none;
     }
