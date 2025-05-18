@@ -1,0 +1,37 @@
+*Những thống nhất chung*
+1.
+2. 
+
+*Những lỗi/khó khăn đang mắc*
+a. Header
+- căn chỉnh header__list với display 
+=> grid, flex / flex linh hoạt hơn
+
+- logo nằm trung tâm 
+=> position left translateX(-50%)
+
+- navigation responsive
+- dropdown lỗi do đặt sai vị trí 
+=> ngang navbar__nav
+
+- display block để padding thẻ a
+
+b. main 
+- JS cho 2 slider bị lỗi vòng lặp
+
+- layout slider
+=> lần lượt trên xuống dưới btn_prev -> container -> btn_next
+
+- 
+c. footer
+- căn chỉnh responsive phần content đóng/mở
+=> chia layout 3 phần input, label, content. 
+    input sẽ có checkbox (lưu ý mỗi phần checkbox phải có id riêng)
+    label là phần title và icon
+    content chứa nội dung cần xuất hiện
+
+*Phần cần làm thêm/đang sửa*
+- bonus: nếu được thì phần grid insta cho thêm icon khi hover
+- Sửa tên và giá sản phẩm
+- responsive cho phần category, instra grid và banner
+
